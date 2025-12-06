@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swadhyay Library - Patna's Premier Study Space</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; overflow-x: hidden; }
+        
+        /* Gold Gradient Text */
+        .text-gold {
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #1a1a1a; }
+        ::-webkit-scrollbar-thumb { background: #bf953f; border-radius: 5px; }
+
+        /* Hero Image Overlay */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1568667256549-094345857637?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-gray-900 text-white fixed w-full z-50 shadow-lg transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center" data-aos="fade-right">
+                    <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-gray-900 font-bold text-xl mr-2">S</div>
+                    <div>
+                        <span class="font-bold text-2xl tracking-wider text-white">SWADHYAY</span>
+                        <span class="block text-xs text-yellow-400 tracking-widest">LIBRARY</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 text-sm uppercase font-semibold tracking-wider">
+                    <a href="#home" class="hover:text-yellow-400 transition transform hover:-translate-y-1">Home</a>
+                    <a href="#about" class="hover:text-yellow-400 transition transform hover:-translate-y-1">About</a>
+                    <a href="#facilities" class="hover:text-yellow-400 transition transform hover:-translate-y-1">Facilities</a>
+                    <a href="#gallery" class="hover:text-yellow-400 transition transform hover:-translate-y-1">Gallery</a>
+                    <a href="#plans" class="hover:text-yellow-400 transition transform hover:-translate-y-1">Plans</a>
+                    <a href="#contact" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded hover:bg-yellow-400 transition">Contact</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button class="text-white hover:text-yellow-400 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center px-4 relative">
+        <div class="max-w-4xl" data-aos="zoom-in" data-aos-duration="1000">
+            <p class="text-yellow-400 font-bold tracking-widest uppercase mb-4 text-sm md:text-base">Focus. Learn. Succeed.</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                Your Dream, <br> <span class="text-gold">Our Environment</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                Join Patna's most premium study space at Siddhi Vinayak Villa. 24/7 Access, Revolving Chairs, and Pin-drop Silence.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition transform hover:scale-105 shadow-lg shadow-yellow-500/50">
+                    Book A Demo Seat
+                </a>
+                <a href="#facilities" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition transform hover:scale-105">
+                    Explore Facilities
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-0 w-full bg-yellow-500 text-gray-900 py-2 overflow-hidden">
+            <marquee behavior="scroll" direction="left" class="font-bold uppercase tracking-wider">
+                📢 Admissions Open for New Session at Swadhyay Library, Bhikhna Pahar! Call Now: 8434483655 / 9431839795. 📢 Limited Seats Available!
+            </marquee>
+        </div>
+    </section>
+
+    <section class="py-10 bg-gray-900 text-white border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-4xl font-bold text-yellow-500">24/7</h3>
+                <p class="text-gray-400 text-sm mt-1">Open Hours</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-4xl font-bold text-yellow-500">100+</h3>
+                <p class="text-gray-400 text-sm mt-1">Premium Seats</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-4xl font-bold text-yellow-500">5G</h3>
+                <p class="text-gray-400 text-sm mt-1">High Speed WiFi</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400">
+                <h3 class="text-4xl font-bold text-yellow-500">100%</h3>
+                <p class="text-gray-400 text-sm mt-1">Success Rate</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Library Interior" class="rounded-xl shadow-2xl z-10 relative">
+                        <div class="absolute -bottom-6 -right-6 w-40 h-40 bg-yellow-400 rounded-xl z-0 hidden md:block"></div>
+                        <div class="absolute -top-6 -left-6 w-40 h-40 border-4 border-gray-200 rounded-xl z-0 hidden md:block"></div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <h4 class="text-yellow-600 font-bold uppercase tracking-widest mb-2">About Us</h4>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Why Choose <span class="text-yellow-600">Swadhyay?</span></h2>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        Located at the heart of Patna in <strong>Siddhi Vinayak Villa</strong>, Swadhyay Library is not just a room with books; it is a sanctuary for serious aspirants. 
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Whether you are preparing for UPSC, BPSC, JEE, or NEET, our environment is designed to maximize your focus. With noise cancellation and ergonomic furniture, we ensure your long study hours are comfortable.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-yellow-500 mr-3"></i> Peaceful Environment near Rimjhim Hotel
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-yellow-500 mr-3"></i> Personal Locker Facility
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-yellow-500 mr-3"></i> Daily Newspaper & Magazines
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">Premium Facilities</h2>
+            <div class="w-24 h-1 bg-yellow-500 mx-auto rounded"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-yellow-500 group-hover:text-white transition">
+                    <i class="fas fa-chair"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Revolving Chairs</h3>
+                <p class="text-gray-600">Ergonomic revolving chairs to support your back during long study marathons.</p>
+            </div>
+             <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-yellow-500 group-hover:text-white transition">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Power Backup</h3>
+                <p class="text-gray-600">Uninterrupted electricity supply so your fan and light never go off.</p>
+            </div>
+             <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-yellow-500 group-hover:text-white transition">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">High-Speed WiFi</h3>
+                <p class="text-gray-600">Access online lectures buffer-free with our dedicated leased line internet.</p>
+            </div>
+             <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-yellow-500 group-hover:text-white transition">
+                    <i class="fas fa-snowflake"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Fully Air Conditioned</h3>
+                <p class="text-gray-600">Maintain a cool mind in the scorching heat of Patna.</p>
+            </div>
+             <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="500">
+                <div class="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-yellow-500 group-hover:text-white transition">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">CCTV Surveillance</h3>
+                <p class="text-gray-600">24/7 security monitoring for your safety and belonging's safety.</p>
+            </div>
+             <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="600">
+                <div class="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-yellow-500 group-hover:text-white transition">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">RO Water</h3>
+                <p class="text-gray-600">Chilled and purified drinking water available 24/7.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+            <h2 class="text-4xl font-bold text-white mb-4" data-aos="fade-up">Inside Swadhyay</h2>
+            <p class="text-gray-400">A glimpse of your future success station.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 max-w-7xl mx-auto">
+            <div class="h-64 overflow-hidden rounded-lg" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+            </div>
+            <div class="h-64 overflow-hidden rounded-lg" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+            </div>
+            <div class="h-64 overflow-hidden rounded-lg" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">Affordable Plans</h2>
+            <p class="text-gray-600">Choose a shift that suits your study schedule.</p>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="border border-gray-200 p-8 rounded-2xl text-center hover:shadow-xl transition relative overflow-hidden" data-aos="flip-left">
+                <h3 class="text-xl font-bold text-gray-800">Morning Shift</h3>
+                <p class="text-sm text-gray-500 mt-2">6:00 AM - 2:00 PM</p>
+                <div class="my-6">
+                    <span class="text-4xl font-bold text-gray-900">₹600</span><span class="text-gray-500">/mo</span>
+                </div>
+                <ul class="text-left space-y-3 mb-8 text-gray-600 text-sm">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Reserved Seat</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> High Speed WiFi</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Locker Access</li>
+                </ul>
+                <a href="#contact" class="block w-full border-2 border-gray-800 text-gray-800 py-2 rounded-lg font-bold hover:bg-gray-800 hover:text-white transition">Join Now</a>
+            </div>
+
+            <div class="border-2 border-yellow-500 bg-gray-900 p-8 rounded-2xl text-center shadow-2xl relative transform md:-translate-y-4" data-aos="flip-up">
+                <div class="absolute top-0 left-0 w-full bg-yellow-500 text-xs font-bold uppercase py-1 tracking-wider">Most Popular</div>
+                <h3 class="text-xl font-bold text-white mt-4">Full Day</h3>
+                <p class="text-sm text-gray-400 mt-2">6:00 AM - 10:00 PM</p>
+                <div class="my-6">
+                    <span class="text-4xl font-bold text-yellow-500">₹1000</span><span class="text-gray-400">/mo</span>
+                </div>
+                <ul class="text-left space-y-3 mb-8 text-gray-300 text-sm">
+                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> Fixed Personal Seat</li>
+                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> Unlimited WiFi</li>
+                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> Separate Locker</li>
+                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> AC Access</li>
+                </ul>
+                <a href="#contact" class="block w-full bg-yellow-500 text-gray-900 py-3 rounded-lg font-bold hover:bg-yellow-400 transition">Join Now</a>
+            </div>
+
+            <div class="border border-gray-200 p-8 rounded-2xl text-center hover:shadow-xl transition" data-aos="flip-right">
+                <h3 class="text-xl font-bold text-gray-800">Evening Shift</h3>
+                <p class="text-sm text-gray-500 mt-2">2:00 PM - 10:00 PM</p>
+                <div class="my-6">
+                    <span class="text-4xl font-bold text-gray-900">₹600</span><span class="text-gray-500">/mo</span>
+                </div>
+                <ul class="text-left space-y-3 mb-8 text-gray-600 text-sm">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Reserved Seat</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> High Speed WiFi</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Peaceful Zone</li>
+                </ul>
+                <a href="#contact" class="block w-full border-2 border-gray-800 text-gray-800 py-2 rounded-lg font-bold hover:bg-gray-800 hover:text-white transition">Join Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div data-aos="fade-right">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Visit Swadhyay Library</h2>
+                <p class="text-gray-600 mb-8">We are located in a prime area of Patna, easily accessible for students.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 shrink-0">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Address</h4>
+                            <p class="text-gray-600">1st Floor, Siddhi Vinayak Villa, Near Rimjhim Hotel,<br>Bari Path, Ramna Road More, Bhikhna Pahar, Patna-4</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 shrink-0">
+                            <i class="fas fa-phone-alt text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Call Us</h4>
+                            <p class="text-gray-600 font-bold">8434483655 / 9431839795</p>
+                            <p class="text-xs text-gray-500">Available on WhatsApp</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 shrink-0">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Email</h4>
+                            <p class="text-gray-600">swadhayaylibrary123@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-left">
+                <h3 class="text-2xl font-bold mb-6">Enquire Now</h3>
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">Full Name</label>
+                        <input type="text" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-yellow-500" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
+                        <input type="tel" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-yellow-500" placeholder="Enter your mobile">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                        <textarea class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-yellow-500 h-32" placeholder="I want to join from tomorrow..."></textarea>
+                    </div>
+                    <button class="w-full bg-gray-900 text-white font-bold py-3 rounded-lg hover:bg-gray-800 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-t">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <details class="bg-gray-50 p-4 rounded-lg cursor-pointer">
+                    <summary class="font-bold text-gray-800">Is the library open on Sundays?</summary>
+                    <p class="mt-2 text-gray-600">Yes, Swadhyay Library is open 7 days a week, 24/7.</p>
+                </details>
+                <details class="bg-gray-50 p-4 rounded-lg cursor-pointer">
+                    <summary class="font-bold text-gray-800">Do you provide reserved seats?</summary>
+                    <p class="mt-2 text-gray-600">Yes, once you register, a specific seat number is allocated to you.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-10">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+                <h3 class="text-white font-bold text-xl mb-4">Swadhyay Library</h3>
+                <p class="text-sm">The best place for self-study in Bhikhna Pahar, Patna.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-xl mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#home" class="hover:text-yellow-500">Home</a></li>
+                    <li><a href="#facilities" class="hover:text-yellow-500">Facilities</a></li>
+                    <li><a href="#plans" class="hover:text-yellow-500">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-xl mb-4">Connect</h3>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-gray-900 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-gray-900 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-gray-900 transition"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-10 border-t border-gray-800 pt-6 text-xs">
+            &copy; 2025 Swadhyay Library. All rights reserved. Designed for Patna's Future.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-opacity-95', 'backdrop-blur-md');
+            } else {
+                navbar.classList.remove('bg-opacity-95', 'backdrop-blur-md');
+            }
+        });
+    </script>
+</body>
+</html>
